@@ -1415,6 +1415,26 @@
   font-weight: 600;
 }
 
+.save-badge{
+  display:inline-block;
+  background:#2e9e3f;
+  color:#fff;
+  font-size:12px;
+  font-weight:700;
+  padding:3px 8px;
+  border-radius:3px;
+  margin-left:4px;
+}
+
+.credit-line{
+  margin-top:6px;
+  font-size:14px;
+  color:#555;
+}
+.credit-line strong{
+  color:#111;
+}
+
 .est-delivery{
   display:flex;
   align-items:center;
@@ -1494,7 +1514,30 @@
   margin: 4px 0 6px !important;
 }
 
-.rating{ 
+.stock-warning{
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #efefef;
+  font-size: 14px;
+  color: #e53935;
+  font-weight: 600;
+}
+
+.demand-line{
+  font-size: 13px;
+  color: #e67e00;
+  margin: 6px 0 4px;
+  font-weight: 600;
+}
+.demand-icon{
+  margin-right: 2px;
+}
+.demand-count{
+  color: #e65100;
+  font-weight: 700;
+}
+
+.rating{
   margin: 0 !important; 
   padding: 0 !important;
 }
@@ -1741,6 +1784,11 @@
 
       <p class="subtitle">Defy · Russell Hobbs · Mellerware</p>
 
+      <div class="demand-line">
+        <span class="demand-icon">⚡</span>
+        In high demand - <strong class="demand-count">51 people</strong> have this in their cart
+      </div>
+
       <div class="rating" aria-label="Rating and reviews">
         <svg class="star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path d="M12 17.3l-6.18 3.73 1.64-7.03L2 9.24l7.19-.62L12 2l2.81 6.62 7.19.62-5.46 4.76 1.64 7.03z"></path>
@@ -1756,16 +1804,16 @@
     <div class="price-left">
       <div class="main-price">
         <span class="currency">R</span>
-        <span class="price">647</span>
+        <span class="price">599</span>
       </div>
 
       <div class="was-price">
-        <span class="was">R1697</span>
-        <svg class="info-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <circle cx="12" cy="12" r="9"></circle>
-          <path d="M12 10v6"></path>
-          <path d="M12 7h.01"></path>
-        </svg>
+        <span class="was">R1,697</span>
+        <span class="save-badge">You save R1,098</span>
+      </div>
+
+      <div class="credit-line">
+        or <strong>R49/mo</strong> x 12 with takealot.credit
       </div>
 
       <div class="est-delivery">
@@ -1780,6 +1828,8 @@
   <span class="delivery-range" id="singleDeliveryRange">Get It Tomorrow!</span>
   <a class="tcs" href="#">T&Cs Apply</a>
 </div>
+
+      <div class="stock-warning">Only <strong>4</strong> left at this price</div>
 
   </div>
 </div></section>
